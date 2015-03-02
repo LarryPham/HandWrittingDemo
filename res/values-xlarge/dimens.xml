@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editor_layout_width_size">800dp</dimen>
+    <dimen name="editor_layout_height_size">600dp</dimen>
+    <dimen name="editor_commands_layout_width_size">600dp</dimen>
+</resources>

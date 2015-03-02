@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/editor_layout_width_size"
+                android:layout_height="@dimen/editor_layout_height_size">
+    <LinearLayout
+                android:id="@+id/layout_commands"
+                android:layout_width="@dimen/editor_commands_layout_width_size"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3.0">
+        <Button android:id="@+id/editor_cancel_button"
+                android:layout_width="0dp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_background_selector"
+                android:text="@string/editor_cancel_button_content"/>
+        <Button android:id="@+id/editor_clear_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/buttonBarButtonStyle"
+
+                android:text="@string/editor_clear_button_content"
+                android:background="@drawable/button_background_selector"/>
+        <Button android:id="@+id/editor_save_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                style="?android:attr/buttonBarButtonStyle"
+                android:text="@string/editor_save_button_content"
+                android:background="@drawable/button_background_selector"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layout_input_your_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/layout_commands"
+                  android:layout_marginLeft="12dp"
+                  android:layout_marginRight="12dp"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:text="@string/your_name_content"/>
+        <EditText android:id="@+id/editext_your_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:textColorHint="@android:color/holo_blue_light"
+                  android:hint="@string/edit_your_name_hint"/>
+    </LinearLayout>
+    <TextView android:id="@+id/your_signature_guide"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="12dp"
+              android:layout_marginRight="12dp"
+              android:layout_marginTop="5dp"
+              android:layout_below="@id/layout_input_your_name"
+              android:text="@string/enter_your_signature_below_guide"
+              android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <FrameLayout android:id="@+id/signature_content"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@id/your_signature_guide"/>
+
+</RelativeLayout>

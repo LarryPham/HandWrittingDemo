@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HandQuill</string>
+    <string name="signature_title_content">This is a demo for get the signature by drawing something with your gestures.\n
+    You should input your name and drawing the signature by touch into screen</string>
+    <string name="get_signature_button_content">Get your signature</string>
+    <string name="finish_button_content">Finish!</string>
+    <string name="editor_cancel_button_content">Cancel</string>
+    <string name="editor_clear_button_content">Clear</string>
+    <string name="editor_save_button_content">Save</string>
+    <string name="your_name_content">Your name:</string>
+    <string name="edit_your_name_hint">Enter your name at here…</string>
+    <string name="enter_your_signature_below_guide">To trace your signature, we recommend you should enter your
+        signature as below…
+    </string>
+    <string name="external_dir">signature</string>
+    <string name="signature_confirmation">Signature Confirmation</string>
+</resources>

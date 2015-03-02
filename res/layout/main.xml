@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/signature_title_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"/>
+    <LinearLayout android:layout_width="500dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:padding="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="40dp"
+                  android:weightSum="2.0">
+        <Button
+                android:id="@+id/button_get_signature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/get_signature_button_content"
+                android:background="@drawable/button_background_selector"
+                android:layout_gravity="center_horizontal"/>
+        <Button
+                android:id="@+id/button_finish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/finish_button_content"
+                android:background="@drawable/button_background_selector"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>
+
